@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>JavaScript Affirmation App</title>
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Affirmation App</h1>
+  </header>
+
+  <main>
+    <section>
+      <h3>Fire and Ice:</h3>
+      <button id="fire-btn" onclick="addFire()">🔥</button>
+      <button id="ice-btn" onclick="addIce()">❄️</button>
+      <div id="emojiBlock">
+        <!-- fire and ice emojis go here -->
+      </div>
+    </section>
+
+    <section>
+      <h3>Create an Affirmation:</h3>
+      <form>
+        <input id="affirmation"
+          placeholder="Affirmation"
+          type="text">
+        <input id="author"
+          placeholder="Author"
+          type="text">
+        <button onclick="submitInfo(event)">Submit</button>
+      </form>
+    </section>
+    
+    <section>
+      <h3>Your Affirmations:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Affirmation Text</th>
+            <th>Affirmation Author</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <h5>Thanks for being here. Sincerely. 🙂</h5>
+  </footer>
+</body>
+</html>
